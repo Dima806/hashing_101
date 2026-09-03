@@ -1,0 +1,13 @@
+{
+  "_meta": {
+    "name": "03_counting_bloom",
+    "seed": 20260903
+  },
+  "expected_items": 50000,
+  "counter_bits": 8,
+  "counting_memory_bytes": 479253,
+  "plain_memory_bytes": 59907,
+  "memory_multiple": 7.999949922379688,
+  "removal_is_exact": true,
+  "unknown_removal_refused": true
+}

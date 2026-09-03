@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "name": "04_exact_vs_approximate",
+    "seed": 20260903
+  },
+  "comparison": [
+    {
+      "structure": "exact set",
+      "memory_bytes": 44277432,
+      "seconds": 0.08654301100068551,
+      "estimate": 500000.0,
+      "relative_error": 0.0
+    },
+    {
+      "structure": "hyperloglog (p=11)",
+      "memory_bytes": 1536,
+      "seconds": 0.4162047549998533,
+      "estimate": 496574.3260260947,
+      "relative_error": -0.006851347947810543
+    }
+  ]
+}

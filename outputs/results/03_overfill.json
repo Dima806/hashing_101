@@ -1,0 +1,49 @@
+{
+  "_meta": {
+    "name": "03_overfill",
+    "seed": 20260903
+  },
+  "overfill": [
+    {
+      "times_design_capacity": 0.5,
+      "items_added": 10000,
+      "fill_ratio": 0.3062148543051194,
+      "measured_fp_rate": 0.00038,
+      "theoretical_fp_rate": 0.0002506865955812445,
+      "false_negatives": 0
+    },
+    {
+      "times_design_capacity": 1.0,
+      "items_added": 20000,
+      "fill_ratio": 0.518163608100072,
+      "measured_fp_rate": 0.01042,
+      "theoretical_fp_rate": 0.010039010484203732,
+      "false_negatives": 0
+    },
+    {
+      "times_design_capacity": 2.0,
+      "items_added": 40000,
+      "fill_ratio": 0.7684479035169168,
+      "measured_fp_rate": 0.15826,
+      "theoretical_fp_rate": 0.15745082176726732,
+      "false_negatives": 0
+    },
+    {
+      "times_design_capacity": 3.0,
+      "items_added": 60000,
+      "fill_ratio": 0.8884779501517981,
+      "measured_fp_rate": 0.43916,
+      "theoretical_fp_rate": 0.43603420409529914,
+      "false_negatives": 0
+    },
+    {
+      "times_design_capacity": 5.0,
+      "items_added": 100000,
+      "fill_ratio": 0.9741160759929474,
+      "measured_fp_rate": 0.83342,
+      "theoretical_fp_rate": 0.8318825992482695,
+      "false_negatives": 0
+    }
+  ],
+  "design_capacity": 20000
+}

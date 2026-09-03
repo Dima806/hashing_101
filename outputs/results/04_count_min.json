@@ -1,0 +1,114 @@
+{
+  "_meta": {
+    "name": "04_count_min",
+    "seed": 20260903
+  },
+  "stream": {
+    "n_items": 200000,
+    "n_unique": 20000,
+    "distribution": "zipf",
+    "zipf_exponent": 1.2
+  },
+  "epsilon": 0.001,
+  "delta": 0.01,
+  "width": 2719,
+  "depth": 5,
+  "memory_bytes": 108760,
+  "approximate_exact_counter_bytes": 1460000,
+  "error_bound": 200.0,
+  "top_k_report": [
+    {
+      "item": "item-00000000",
+      "true_count": 36687,
+      "estimate": 36693,
+      "overshoot": 6,
+      "error_bound": 200.0,
+      "within_bound": true,
+      "memory_bytes": 108760
+    },
+    {
+      "item": "item-00000001",
+      "true_count": 16064,
+      "estimate": 16074,
+      "overshoot": 10,
+      "error_bound": 200.0,
+      "within_bound": true,
+      "memory_bytes": 108760
+    },
+    {
+      "item": "item-00000002",
+      "true_count": 9770,
+      "estimate": 9782,
+      "overshoot": 12,
+      "error_bound": 200.0,
+      "within_bound": true,
+      "memory_bytes": 108760
+    },
+    {
+      "item": "item-00000003",
+      "true_count": 7071,
+      "estimate": 7082,
+      "overshoot": 11,
+      "error_bound": 200.0,
+      "within_bound": true,
+      "memory_bytes": 108760
+    },
+    {
+      "item": "item-00000004",
+      "true_count": 5352,
+      "estimate": 5356,
+      "overshoot": 4,
+      "error_bound": 200.0,
+      "within_bound": true,
+      "memory_bytes": 108760
+    },
+    {
+      "item": "item-00000005",
+      "true_count": 4170,
+      "estimate": 4188,
+      "overshoot": 18,
+      "error_bound": 200.0,
+      "within_bound": true,
+      "memory_bytes": 108760
+    },
+    {
+      "item": "item-00000006",
+      "true_count": 3555,
+      "estimate": 3563,
+      "overshoot": 8,
+      "error_bound": 200.0,
+      "within_bound": true,
+      "memory_bytes": 108760
+    },
+    {
+      "item": "item-00000007",
+      "true_count": 3035,
+      "estimate": 3052,
+      "overshoot": 17,
+      "error_bound": 200.0,
+      "within_bound": true,
+      "memory_bytes": 108760
+    },
+    {
+      "item": "item-00000008",
+      "true_count": 2616,
+      "estimate": 2625,
+      "overshoot": 9,
+      "error_bound": 200.0,
+      "within_bound": true,
+      "memory_bytes": 108760
+    },
+    {
+      "item": "item-00000009",
+      "true_count": 2413,
+      "estimate": 2419,
+      "overshoot": 6,
+      "error_bound": 200.0,
+      "within_bound": true,
+      "memory_bytes": 108760
+    }
+  ],
+  "never_underestimates": true,
+  "heavy_hitters_found": 11,
+  "heavy_hitters_true": 11
+}

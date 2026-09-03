@@ -1,0 +1,13 @@
+{
+  "_meta": {
+    "name": "06_takeaways",
+    "seed": 20260903
+  },
+  "takeaways": [
+    "Feature hashing is hash(category) % n_buckets - no vocabulary, fixed width, unseen values fine.",
+    "Collisions follow balls-in-bins, so the bucket count can be chosen from a formula.",
+    "Model quality rises with buckets and then flattens: pick the knee, not the maximum.",
+    "Signed hashing makes colliding contributions cancel in expectation, for one spare hash bit.",
+    "Across all six notebooks: one primitive, a controllable error, and orders of magnitude of memory."
+  ]
+}

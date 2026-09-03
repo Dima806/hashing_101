@@ -1,0 +1,15 @@
+{
+  "_meta": {
+    "name": "04_hyperloglog_headline",
+    "seed": 20260903
+  },
+  "precision": 11,
+  "n_registers": 2048,
+  "true_cardinality": 500000,
+  "estimate": 496574.3260260947,
+  "relative_error": -0.006851347947810543,
+  "standard_error": 0.022980970388562793,
+  "packed_memory_bytes": 1536,
+  "approximate_exact_set_bytes": 50000000,
+  "zero_registers_remaining": 0
+}

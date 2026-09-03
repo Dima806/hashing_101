@@ -1,0 +1,12 @@
+{
+  "_meta": {
+    "name": "01_backends",
+    "seed": 20260903
+  },
+  "n_hashes": 20000,
+  "mmh3_ns_per_hash": 503.0828999224468,
+  "python_ns_per_hash": 3345.8010499998636,
+  "slowdown_factor": 6.650595857095597,
+  "fallback_is_uniform": true,
+  "fallback_p_value": 0.21797346380125818
+}

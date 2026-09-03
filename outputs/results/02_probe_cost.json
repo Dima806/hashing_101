@@ -1,0 +1,158 @@
+{
+  "_meta": {
+    "name": "02_probe_cost",
+    "seed": 20260903
+  },
+  "capacity": 8192,
+  "probe_costs": [
+    {
+      "strategy": "chaining",
+      "load_factor": 0.1,
+      "n_items": 819,
+      "mean_probes": 1.05006105006105,
+      "theory_probes": 1.05,
+      "microseconds_per_lookup": 2.4892551897583197
+    },
+    {
+      "strategy": "open addressing",
+      "load_factor": 0.1,
+      "n_items": 819,
+      "mean_probes": 1.0573870573870574,
+      "theory_probes": 1.0555555555555556,
+      "microseconds_per_lookup": 1.7057228323320377
+    },
+    {
+      "strategy": "chaining",
+      "load_factor": 0.25,
+      "n_items": 2048,
+      "mean_probes": 1.119140625,
+      "theory_probes": 1.125,
+      "microseconds_per_lookup": 0.8868120122684786
+    },
+    {
+      "strategy": "open addressing",
+      "load_factor": 0.25,
+      "n_items": 2048,
+      "mean_probes": 1.1640625,
+      "theory_probes": 1.1666666666666665,
+      "microseconds_per_lookup": 1.6017026363002174
+    },
+    {
+      "strategy": "chaining",
+      "load_factor": 0.4,
+      "n_items": 3276,
+      "mean_probes": 1.202075702075702,
+      "theory_probes": 1.2,
+      "microseconds_per_lookup": 1.342409645669263
+    },
+    {
+      "strategy": "open addressing",
+      "load_factor": 0.4,
+      "n_items": 3276,
+      "mean_probes": 1.335164835164835,
+      "theory_probes": 1.3333333333333335,
+      "microseconds_per_lookup": 1.636490537054555
+    },
+    {
+      "strategy": "chaining",
+      "load_factor": 0.5,
+      "n_items": 4096,
+      "mean_probes": 1.254150390625,
+      "theory_probes": 1.25,
+      "microseconds_per_lookup": 1.0029318846527246
+    },
+    {
+      "strategy": "open addressing",
+      "load_factor": 0.5,
+      "n_items": 4096,
+      "mean_probes": 1.51025390625,
+      "theory_probes": 1.5,
+      "microseconds_per_lookup": 1.6903264161705067
+    },
+    {
+      "strategy": "chaining",
+      "load_factor": 0.6,
+      "n_items": 4915,
+      "mean_probes": 1.3098677517802646,
+      "theory_probes": 1.3,
+      "microseconds_per_lookup": 0.9194734485554419
+    },
+    {
+      "strategy": "open addressing",
+      "load_factor": 0.6,
+      "n_items": 4915,
+      "mean_probes": 1.7943031536113936,
+      "theory_probes": 1.75,
+      "microseconds_per_lookup": 1.8372665309838216
+    },
+    {
+      "strategy": "chaining",
+      "load_factor": 0.7,
+      "n_items": 5734,
+      "mean_probes": 1.3576909661667247,
+      "theory_probes": 1.35,
+      "microseconds_per_lookup": 1.086324381007972
+    },
+    {
+      "strategy": "open addressing",
+      "load_factor": 0.7,
+      "n_items": 5734,
+      "mean_probes": 2.276246948029299,
+      "theory_probes": 2.1666666666666665,
+      "microseconds_per_lookup": 1.9353498429031801
+    },
+    {
+      "strategy": "chaining",
+      "load_factor": 0.8,
+      "n_items": 6553,
+      "mean_probes": 1.4031741187242484,
+      "theory_probes": 1.4,
+      "microseconds_per_lookup": 0.9676317715743498
+    },
+    {
+      "strategy": "open addressing",
+      "load_factor": 0.8,
+      "n_items": 6553,
+      "mean_probes": 3.219594079047764,
+      "theory_probes": 3.0000000000000004,
+      "microseconds_per_lookup": 1.875161605323834
+    },
+    {
+      "strategy": "chaining",
+      "load_factor": 0.9,
+      "n_items": 7372,
+      "mean_probes": 1.4549647314161693,
+      "theory_probes": 1.45,
+      "microseconds_per_lookup": 1.9805393380651628
+    },
+    {
+      "strategy": "open addressing",
+      "load_factor": 0.9,
+      "n_items": 7372,
+      "mean_probes": 5.459712425393381,
+      "theory_probes": 5.500000000000001,
+      "microseconds_per_lookup": 2.2050621271090725
+    },
+    {
+      "strategy": "chaining",
+      "load_factor": 0.95,
+      "n_items": 7782,
+      "mean_probes": 1.4821382677974813,
+      "theory_probes": 1.475,
+      "microseconds_per_lookup": 0.9500692624293298
+    },
+    {
+      "strategy": "open addressing",
+      "load_factor": 0.95,
+      "n_items": 7782,
+      "mean_probes": 10.16756617836032,
+      "theory_probes": 10.499999999999991,
+      "microseconds_per_lookup": 4.002210100243288
+    }
+  ],
+  "theory": {
+    "chaining_successful_lookup": "1 + a/2",
+    "linear_probing_successful_lookup": "(1 + 1/(1 - a))/2"
+  },
+  "note": "Measured probe counts track theory closely enough that the wall near a = 1 is a property of the method, not of this implementation."
+}

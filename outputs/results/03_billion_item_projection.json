@@ -1,0 +1,49 @@
+{
+  "_meta": {
+    "name": "03_billion_item_projection",
+    "seed": 20260903
+  },
+  "projection": [
+    {
+      "n_items": 1000000,
+      "target_fp_rate": 0.01,
+      "exact_set_bytes": 159868400.0,
+      "bloom_bytes": 1198133,
+      "bits_per_item": 9.585059,
+      "savings_factor": 133.43126347408844,
+      "measured": false
+    },
+    {
+      "n_items": 10000000,
+      "target_fp_rate": 0.01,
+      "exact_set_bytes": 1598684000.0,
+      "bloom_bytes": 11981323,
+      "bits_per_item": 9.5850584,
+      "savings_factor": 133.43134143032452,
+      "measured": false
+    },
+    {
+      "n_items": 100000000,
+      "target_fp_rate": 0.01,
+      "exact_set_bytes": 15986840000.0,
+      "bloom_bytes": 119813230,
+      "bits_per_item": 9.58505838,
+      "savings_factor": 133.43134143032452,
+      "measured": false
+    },
+    {
+      "n_items": 1000000000,
+      "target_fp_rate": 0.01,
+      "exact_set_bytes": 159868400000.0,
+      "bloom_bytes": 1198132298,
+      "bits_per_item": 9.585058378,
+      "savings_factor": 133.43134165305673,
+      "measured": false
+    }
+  ],
+  "bytes_per_exact_item_measured": 159.8684,
+  "billion_items_bloom_gb": 1.198132298,
+  "billion_items_exact_gb": 159.8684,
+  "savings_factor": 133.43134165305673,
+  "honest_claim": "A billion items at a 1% false-positive rate needs about 1.2 GB of bits, not a megabyte; a megabyte holds about a million items. The saving is 133x against an exact set - one machine instead of a cluster - and it is projected from the sizing formula plus a measured per-item cost, never allocated."
+}

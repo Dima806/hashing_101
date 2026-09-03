@@ -1,0 +1,71 @@
+[project]
+name = "hashing-101"
+version = "0.1.0"
+description = "Hashing 101: how to remember a billion things in a megabyte and be wrong on purpose"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+keywords = [
+    "hashing",
+    "bloom-filter",
+    "hyperloglog",
+    "count-min-sketch",
+    "minhash",
+    "lsh",
+    "feature-hashing",
+    "probabilistic-data-structures",
+]
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.14",
+    "mmh3>=4.1",
+    "pandas>=2.2",
+    "matplotlib>=3.9",
+    "plotly>=5.22",
+    "streamlit>=1.38",
+    "pydantic>=2.9",
+    "pydantic-settings>=2.5",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3",
+    "pytest-cov>=5.0",
+    "ruff>=0.8",
+    "ty>=0.0.1a7",
+    "jupyter>=1.1",
+    "ipykernel>=6.29",
+    "nbconvert>=7.16",
+    "nbclient>=0.10",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# `src/` is the importable package (src/__init__.py, src/core/, src/probabilistic/, ...).
+# Installing it editable is what lets notebooks/, app/ and tests/ all do `from src.core...`
+# without sys.path hacks, whatever directory they run from.
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 99
+extend-exclude = ["notebooks", "outputs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "N", "B", "A", "SIM", "PTH"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+# Single-letter names are the notation of the papers (m bits, k hashes, b bands, r rows,
+# w width, d depth, p precision); keeping them is the point.
+"src/**" = ["N803", "N806"]
+"tests/**" = ["N803", "N806"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"

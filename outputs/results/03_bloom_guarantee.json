@@ -1,0 +1,54 @@
+{
+  "_meta": {
+    "name": "03_bloom_guarantee",
+    "seed": 20260903
+  },
+  "n_items": 100000,
+  "target_fp_rate": 0.01,
+  "n_bits": 958506,
+  "n_hashes": 7,
+  "bits_per_item": 9.58506,
+  "memory_bytes": 119814,
+  "fill_ratio": 0.518082307257336,
+  "false_negatives": 0,
+  "measured_fp_rate": 0.00988,
+  "theoretical_fp_rate": 0.010039209581758123,
+  "n_absent_queries": 100000,
+  "geometries": [
+    {
+      "target_fp_rate": 0.1,
+      "bits_per_item": 4.79253,
+      "n_hashes": 3,
+      "bytes_for_100k_items": 59907,
+      "bytes_for_1bn_items": 599066149
+    },
+    {
+      "target_fp_rate": 0.05,
+      "bits_per_item": 6.23523,
+      "n_hashes": 4,
+      "bytes_for_100k_items": 77941,
+      "bytes_for_1bn_items": 779403029
+    },
+    {
+      "target_fp_rate": 0.01,
+      "bits_per_item": 9.58506,
+      "n_hashes": 7,
+      "bytes_for_100k_items": 119814,
+      "bytes_for_1bn_items": 1198132298
+    },
+    {
+      "target_fp_rate": 0.001,
+      "bits_per_item": 14.37759,
+      "n_hashes": 10,
+      "bytes_for_100k_items": 179720,
+      "bytes_for_1bn_items": 1797198446
+    },
+    {
+      "target_fp_rate": 0.0001,
+      "bits_per_item": 19.17012,
+      "n_hashes": 13,
+      "bytes_for_100k_items": 239627,
+      "bytes_for_1bn_items": 2396264595
+    }
+  ]
+}

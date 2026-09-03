@@ -1,0 +1,13 @@
+{
+  "_meta": {
+    "name": "02_takeaways",
+    "seed": 20260903
+  },
+  "takeaways": [
+    "A hash table is a hash plus a collision policy: chaining or open addressing.",
+    "Cost depends on the load factor, not the item count - which is why dicts resize themselves.",
+    "Chaining degrades like 1 + a/2; linear probing degrades like (1 + 1/(1-a))/2.",
+    "Open-addressing deletes need tombstones, or keys behind the hole become unreachable.",
+    "Collisions are the central design concern of every structure in this project."
+  ]
+}

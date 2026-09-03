@@ -1,0 +1,260 @@
+{
+  "_meta": {
+    "name": "05_found_duplicates",
+    "seed": 20260903
+  },
+  "index_seconds": 0.07919813800072006,
+  "n_documents": 400,
+  "candidate_pairs": 40,
+  "all_pairs": 79800,
+  "planted_pairs": 40,
+  "planted_recovered": 40,
+  "index_memory_bytes": 512000,
+  "candidates": [
+    {
+      "doc_a": 269,
+      "doc_b": 398,
+      "true_jaccard": 0.8983050847457628,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 254,
+      "doc_b": 365,
+      "true_jaccard": 0.8064516129032258,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 241,
+      "doc_b": 360,
+      "true_jaccard": 0.8064516129032258,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 10,
+      "doc_b": 392,
+      "true_jaccard": 0.7777777777777778,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 290,
+      "doc_b": 383,
+      "true_jaccard": 0.7777777777777778,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 147,
+      "doc_b": 366,
+      "true_jaccard": 0.7777777777777778,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 102,
+      "doc_b": 364,
+      "true_jaccard": 0.75,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 15,
+      "doc_b": 371,
+      "true_jaccard": 0.75,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 240,
+      "doc_b": 382,
+      "true_jaccard": 0.75,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 342,
+      "doc_b": 394,
+      "true_jaccard": 0.75,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 264,
+      "doc_b": 385,
+      "true_jaccard": 0.75,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 288,
+      "doc_b": 373,
+      "true_jaccard": 0.7230769230769231,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 154,
+      "doc_b": 384,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 152,
+      "doc_b": 372,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 105,
+      "doc_b": 379,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 27,
+      "doc_b": 378,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 235,
+      "doc_b": 362,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 226,
+      "doc_b": 380,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 201,
+      "doc_b": 368,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 191,
+      "doc_b": 386,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 162,
+      "doc_b": 381,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 183,
+      "doc_b": 361,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 187,
+      "doc_b": 393,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 188,
+      "doc_b": 363,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 258,
+      "doc_b": 388,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 257,
+      "doc_b": 377,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 249,
+      "doc_b": 387,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 253,
+      "doc_b": 397,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 284,
+      "doc_b": 390,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 273,
+      "doc_b": 391,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 299,
+      "doc_b": 389,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 272,
+      "doc_b": 367,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 301,
+      "doc_b": 369,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 326,
+      "doc_b": 399,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 330,
+      "doc_b": 375,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 351,
+      "doc_b": 376,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 50,
+      "doc_b": 370,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 8,
+      "doc_b": 374,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 99,
+      "doc_b": 395,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    },
+    {
+      "doc_a": 72,
+      "doc_b": 396,
+      "true_jaccard": 0.696969696969697,
+      "planted_duplicate": true
+    }
+  ],
+  "closest_pair_text": {
+    "doc_a": "cardinality5 bound0 vector8 bound3 cardinality3 count9 encoder6 shard0 duplicate2 shard8 noise6 bloom9 shard9 sketch1 unique0 window7 signal0 target1 stream8 encoder1 data9 batch8 probe2 bucket1 bucket5 estimate4 array6 pipeline5 array5 noise7 estimate9 stream5 corpus7 shard2 bound1 hash9 count10 data7 encoder0 pipeline8 stream3 bloom1 corpus7 dictionary6 cache0 error7 filter6 target9 window2 window5 vector4 index8 bit1 rate0 probe3 corpus3 hash1 sketch3 collision1 vector2",
+    "doc_b": "cardinality5 bound0 vector8 bound3 cardinality3 count9 encoder6 shard0 duplicate2 shard8 noise6 bloom9 shard9 sketch1 unique0 window7 signal0 target1 stream8 encoder1 data9 batch8 probe2 bucket1 bucket5 estimate4 array6 pipeline5 array5 noise7 estimate9 stream5 corpus7 shard2 bound1 hash9 count10 data7 encoder0 pipeline8 stream3 bloom1 corpus7 dictionary6 cache0 error7 filter6 target9 window2 window5 vector4 index8 bit1 rate0 probe3 corpus3 hash1 count4 bloom5 vector2",
+    "true_jaccard": 0.8983050847457628
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "_meta": {
+    "name": "04_merge_and_duplicates",
+    "seed": 20260903
+  },
+  "duplicates_change_nothing": true,
+  "monday_estimate": 251508.50658267218,
+  "tuesday_estimate": 332285.62020880065,
+  "merged_estimate": 496574.3260260947,
+  "true_union": 500000,
+  "merged_relative_error": -0.006851347947810543,
+  "naive_sum": 583794.1267914728
+}

@@ -1,0 +1,13 @@
+{
+  "_meta": {
+    "name": "01_takeaways",
+    "seed": 20260903
+  },
+  "takeaways": [
+    "Hashing turns 'find this thing' into 'compute where it must be'.",
+    "A usable hash needs exactly two properties: uniformity and avalanche.",
+    "Both are measurable: chi-square for uniformity, per-bit flip rates for avalanche.",
+    "A bad hash fails silently, and takes every downstream error guarantee with it.",
+    "The rest of the project is this primitive pointed at harder questions."
+  ]
+}

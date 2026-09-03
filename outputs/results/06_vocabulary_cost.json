@@ -1,0 +1,35 @@
+{
+  "_meta": {
+    "name": "06_vocabulary_cost",
+    "seed": 20260903
+  },
+  "vocabulary_cost": [
+    {
+      "n_categories": 4914,
+      "one_hot_vocabulary_mb": 0.426128,
+      "one_hot_columns": 4914,
+      "feature_hashing_vocabulary_mb": 0.0,
+      "feature_hashing_columns": 256,
+      "measured": true
+    },
+    {
+      "n_categories": 100000,
+      "one_hot_vocabulary_mb": 8.67171347171347,
+      "one_hot_columns": 100000,
+      "feature_hashing_vocabulary_mb": 0.0,
+      "feature_hashing_columns": 256,
+      "measured": false
+    },
+    {
+      "n_categories": 2000000,
+      "one_hot_vocabulary_mb": 173.43426943426942,
+      "one_hot_columns": 2000000,
+      "feature_hashing_vocabulary_mb": 0.0,
+      "feature_hashing_columns": 256,
+      "measured": false
+    }
+  ],
+  "measured_vocabulary_bytes": 426128,
+  "bytes_per_category": 86.71713471713471,
+  "honest_claim": "The saving is not mostly matrix bytes - a real one-hot pipeline is sparse. It is that the vocabulary disappears entirely and the width stops depending on the data."
+}

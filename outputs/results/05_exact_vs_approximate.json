@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "name": "05_exact_vs_approximate",
+    "seed": 20260903
+  },
+  "comparison": [
+    {
+      "method": "all pairs",
+      "comparisons": 79800,
+      "pairs_found": 40,
+      "recall": 1.0,
+      "seconds": 0.5778878769997391
+    },
+    {
+      "method": "minhash + lsh (b=32, r=4)",
+      "comparisons": 40,
+      "pairs_found": 40,
+      "recall": 1.0,
+      "seconds": 0.05838123300054576
+    }
+  ],
+  "observed_work_ratio": 0.0005012531328320802,
+  "projection": [
+    {
+      "n_documents": 400,
+      "all_pairs": 79800,
+      "lsh_candidate_pairs_projected": 40.0,
+      "measured": true
+    },
+    {
+      "n_documents": 10000,
+      "all_pairs": 49995000,
+      "lsh_candidate_pairs_projected": 25060.15037593985,
+      "measured": false
+    },
+    {
+      "n_documents": 100000,
+      "all_pairs": 4999950000,
+      "lsh_candidate_pairs_projected": 2506240.601503759,
+      "measured": false
+    },
+    {
+      "n_documents": 1000000,
+      "all_pairs": 499999500000,
+      "lsh_candidate_pairs_projected": 250626315.78947368,
+      "measured": false
+    }
+  ],
+  "projection_note": "Rows beyond the corpus size scale the measured work ratio; they are projections, not runs, and the measured column says so."
+}

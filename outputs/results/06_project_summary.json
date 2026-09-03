@@ -1,0 +1,95 @@
+{
+  "_meta": {
+    "name": "06_project_summary",
+    "seed": 20260903
+  },
+  "summary": [
+    {
+      "structure": "Bloom filter",
+      "question": "have I seen this item?",
+      "memory": "119,814 bytes for 100,000 items",
+      "error": "0.99% false positives, 0 false negatives"
+    },
+    {
+      "structure": "Bloom filter (projected)",
+      "question": "have I seen this, across a billion items?",
+      "memory": "1.20 GB vs 160 GB exact",
+      "error": "1% false positives, 133x less memory"
+    },
+    {
+      "structure": "HyperLogLog",
+      "question": "how many distinct items?",
+      "memory": "1,536 bytes for 500,000 uniques",
+      "error": "-0.69% (standard error 2.30%)"
+    },
+    {
+      "structure": "Count-Min Sketch",
+      "question": "how often did each item appear?",
+      "memory": "108,760 bytes for a 200,000-event stream",
+      "error": "never underestimates; overshoot bounded by 200"
+    },
+    {
+      "structure": "MinHash + LSH",
+      "question": "which documents are near-duplicates?",
+      "memory": "512,000 bytes indexing 400 documents",
+      "error": "40/40 pairs found from 40 comparisons (vs 79,800)"
+    },
+    {
+      "structure": "Feature hashing",
+      "question": "how do I encode a million categories?",
+      "memory": "256 columns for 4,914 categories, no vocabulary",
+      "error": "R^2 0.581 at a 92% collision rate"
+    }
+  ],
+  "decision_guide": [
+    {
+      "question": "Is this item in my set? (and it fits in memory)",
+      "structure": "set / dict",
+      "memory": "O(n), ~100 bytes per item",
+      "error": "none",
+      "gives up": "nothing, until it does not fit"
+    },
+    {
+      "question": "Have I seen this item before, at scale?",
+      "structure": "Bloom filter",
+      "memory": "~9.6 bits per item at 1%",
+      "error": "false positives only, tunable",
+      "gives up": "certainty on 'yes'; never on 'no'"
+    },
+    {
+      "question": "Have I seen it, and can I forget items?",
+      "structure": "Counting Bloom filter",
+      "memory": "8x a Bloom filter",
+      "error": "false positives only",
+      "gives up": "memory, in exchange for deletion"
+    },
+    {
+      "question": "How many distinct items are there?",
+      "structure": "HyperLogLog",
+      "memory": "1.5 KB at 2.3% error",
+      "error": "~1.04/sqrt(m) relative",
+      "gives up": "the items themselves; only the count survives"
+    },
+    {
+      "question": "How often did each item appear?",
+      "structure": "Count-Min Sketch",
+      "memory": "d x w counters, fixed",
+      "error": "overestimates by <= eps*N",
+      "gives up": "accuracy on rare items; heavy hitters stay reliable"
+    },
+    {
+      "question": "Which documents are near-duplicates?",
+      "structure": "MinHash + LSH",
+      "memory": "128 numbers per document",
+      "error": "misses some pairs near the threshold",
+      "gives up": "exhaustive comparison, and the quadratic cost with it"
+    },
+    {
+      "question": "How do I encode a million categories?",
+      "structure": "Feature hashing",
+      "memory": "n_buckets per row, fixed",
+      "error": "collisions blur categories",
+      "gives up": "interpretability of a single column"
+    }
+  ]
+}

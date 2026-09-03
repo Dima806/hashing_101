@@ -1,0 +1,621 @@
+{
+  "_meta": {
+    "name": "02_resizing",
+    "seed": 20260903
+  },
+  "n_items": 20000,
+  "n_resizes": 11,
+  "final_capacity": 32768,
+  "final_load_factor": 0.6103515625,
+  "max_load_factor": 0.75,
+  "insert_seconds": 0.18413174800116394,
+  "microseconds_per_insert_amortised": 9.206587400058197,
+  "capacity_growth": [
+    {
+      "n_items": 1,
+      "capacity": 16,
+      "load_factor": 0.0625,
+      "n_resizes": 0
+    },
+    {
+      "n_items": 200,
+      "capacity": 512,
+      "load_factor": 0.390625,
+      "n_resizes": 5
+    },
+    {
+      "n_items": 400,
+      "capacity": 1024,
+      "load_factor": 0.390625,
+      "n_resizes": 6
+    },
+    {
+      "n_items": 600,
+      "capacity": 1024,
+      "load_factor": 0.5859375,
+      "n_resizes": 6
+    },
+    {
+      "n_items": 800,
+      "capacity": 2048,
+      "load_factor": 0.390625,
+      "n_resizes": 7
+    },
+    {
+      "n_items": 1000,
+      "capacity": 2048,
+      "load_factor": 0.48828125,
+      "n_resizes": 7
+    },
+    {
+      "n_items": 1200,
+      "capacity": 2048,
+      "load_factor": 0.5859375,
+      "n_resizes": 7
+    },
+    {
+      "n_items": 1400,
+      "capacity": 2048,
+      "load_factor": 0.68359375,
+      "n_resizes": 7
+    },
+    {
+      "n_items": 1600,
+      "capacity": 4096,
+      "load_factor": 0.390625,
+      "n_resizes": 8
+    },
+    {
+      "n_items": 1800,
+      "capacity": 4096,
+      "load_factor": 0.439453125,
+      "n_resizes": 8
+    },
+    {
+      "n_items": 2000,
+      "capacity": 4096,
+      "load_factor": 0.48828125,
+      "n_resizes": 8
+    },
+    {
+      "n_items": 2200,
+      "capacity": 4096,
+      "load_factor": 0.537109375,
+      "n_resizes": 8
+    },
+    {
+      "n_items": 2400,
+      "capacity": 4096,
+      "load_factor": 0.5859375,
+      "n_resizes": 8
+    },
+    {
+      "n_items": 2600,
+      "capacity": 4096,
+      "load_factor": 0.634765625,
+      "n_resizes": 8
+    },
+    {
+      "n_items": 2800,
+      "capacity": 4096,
+      "load_factor": 0.68359375,
+      "n_resizes": 8
+    },
+    {
+      "n_items": 3000,
+      "capacity": 4096,
+      "load_factor": 0.732421875,
+      "n_resizes": 8
+    },
+    {
+      "n_items": 3200,
+      "capacity": 8192,
+      "load_factor": 0.390625,
+      "n_resizes": 9
+    },
+    {
+      "n_items": 3400,
+      "capacity": 8192,
+      "load_factor": 0.4150390625,
+      "n_resizes": 9
+    },
+    {
+      "n_items": 3600,
+      "capacity": 8192,
+      "load_factor": 0.439453125,
+      "n_resizes": 9
+    },
+    {
+      "n_items": 3800,
+      "capacity": 8192,
+      "load_factor": 0.4638671875,
+      "n_resizes": 9
+    },
+    {
+      "n_items": 4000,
+      "capacity": 8192,
+      "load_factor": 0.48828125,
+      "n_resizes": 9
+    },
+    {
+      "n_items": 4200,
+      "capacity": 8192,
+      "load_factor": 0.5126953125,
+      "n_resizes": 9
+    },
+    {
+      "n_items": 4400,
+      "capacity": 8192,
+      "load_factor": 0.537109375,
+      "n_resizes": 9
+    },
+    {
+      "n_items": 4600,
+      "capacity": 8192,
+      "load_factor": 0.5615234375,
+      "n_resizes": 9
+    },
+    {
+      "n_items": 4800,
+      "capacity": 8192,
+      "load_factor": 0.5859375,
+      "n_resizes": 9
+    },
+    {
+      "n_items": 5000,
+      "capacity": 8192,
+      "load_factor": 0.6103515625,
+      "n_resizes": 9
+    },
+    {
+      "n_items": 5200,
+      "capacity": 8192,
+      "load_factor": 0.634765625,
+      "n_resizes": 9
+    },
+    {
+      "n_items": 5400,
+      "capacity": 8192,
+      "load_factor": 0.6591796875,
+      "n_resizes": 9
+    },
+    {
+      "n_items": 5600,
+      "capacity": 8192,
+      "load_factor": 0.68359375,
+      "n_resizes": 9
+    },
+    {
+      "n_items": 5800,
+      "capacity": 8192,
+      "load_factor": 0.7080078125,
+      "n_resizes": 9
+    },
+    {
+      "n_items": 6000,
+      "capacity": 8192,
+      "load_factor": 0.732421875,
+      "n_resizes": 9
+    },
+    {
+      "n_items": 6200,
+      "capacity": 16384,
+      "load_factor": 0.37841796875,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 6400,
+      "capacity": 16384,
+      "load_factor": 0.390625,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 6600,
+      "capacity": 16384,
+      "load_factor": 0.40283203125,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 6800,
+      "capacity": 16384,
+      "load_factor": 0.4150390625,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 7000,
+      "capacity": 16384,
+      "load_factor": 0.42724609375,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 7200,
+      "capacity": 16384,
+      "load_factor": 0.439453125,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 7400,
+      "capacity": 16384,
+      "load_factor": 0.45166015625,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 7600,
+      "capacity": 16384,
+      "load_factor": 0.4638671875,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 7800,
+      "capacity": 16384,
+      "load_factor": 0.47607421875,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 8000,
+      "capacity": 16384,
+      "load_factor": 0.48828125,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 8200,
+      "capacity": 16384,
+      "load_factor": 0.50048828125,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 8400,
+      "capacity": 16384,
+      "load_factor": 0.5126953125,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 8600,
+      "capacity": 16384,
+      "load_factor": 0.52490234375,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 8800,
+      "capacity": 16384,
+      "load_factor": 0.537109375,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 9000,
+      "capacity": 16384,
+      "load_factor": 0.54931640625,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 9200,
+      "capacity": 16384,
+      "load_factor": 0.5615234375,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 9400,
+      "capacity": 16384,
+      "load_factor": 0.57373046875,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 9600,
+      "capacity": 16384,
+      "load_factor": 0.5859375,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 9800,
+      "capacity": 16384,
+      "load_factor": 0.59814453125,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 10000,
+      "capacity": 16384,
+      "load_factor": 0.6103515625,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 10200,
+      "capacity": 16384,
+      "load_factor": 0.62255859375,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 10400,
+      "capacity": 16384,
+      "load_factor": 0.634765625,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 10600,
+      "capacity": 16384,
+      "load_factor": 0.64697265625,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 10800,
+      "capacity": 16384,
+      "load_factor": 0.6591796875,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 11000,
+      "capacity": 16384,
+      "load_factor": 0.67138671875,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 11200,
+      "capacity": 16384,
+      "load_factor": 0.68359375,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 11400,
+      "capacity": 16384,
+      "load_factor": 0.69580078125,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 11600,
+      "capacity": 16384,
+      "load_factor": 0.7080078125,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 11800,
+      "capacity": 16384,
+      "load_factor": 0.72021484375,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 12000,
+      "capacity": 16384,
+      "load_factor": 0.732421875,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 12200,
+      "capacity": 16384,
+      "load_factor": 0.74462890625,
+      "n_resizes": 10
+    },
+    {
+      "n_items": 12400,
+      "capacity": 32768,
+      "load_factor": 0.37841796875,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 12600,
+      "capacity": 32768,
+      "load_factor": 0.384521484375,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 12800,
+      "capacity": 32768,
+      "load_factor": 0.390625,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 13000,
+      "capacity": 32768,
+      "load_factor": 0.396728515625,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 13200,
+      "capacity": 32768,
+      "load_factor": 0.40283203125,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 13400,
+      "capacity": 32768,
+      "load_factor": 0.408935546875,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 13600,
+      "capacity": 32768,
+      "load_factor": 0.4150390625,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 13800,
+      "capacity": 32768,
+      "load_factor": 0.421142578125,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 14000,
+      "capacity": 32768,
+      "load_factor": 0.42724609375,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 14200,
+      "capacity": 32768,
+      "load_factor": 0.433349609375,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 14400,
+      "capacity": 32768,
+      "load_factor": 0.439453125,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 14600,
+      "capacity": 32768,
+      "load_factor": 0.445556640625,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 14800,
+      "capacity": 32768,
+      "load_factor": 0.45166015625,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 15000,
+      "capacity": 32768,
+      "load_factor": 0.457763671875,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 15200,
+      "capacity": 32768,
+      "load_factor": 0.4638671875,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 15400,
+      "capacity": 32768,
+      "load_factor": 0.469970703125,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 15600,
+      "capacity": 32768,
+      "load_factor": 0.47607421875,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 15800,
+      "capacity": 32768,
+      "load_factor": 0.482177734375,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 16000,
+      "capacity": 32768,
+      "load_factor": 0.48828125,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 16200,
+      "capacity": 32768,
+      "load_factor": 0.494384765625,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 16400,
+      "capacity": 32768,
+      "load_factor": 0.50048828125,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 16600,
+      "capacity": 32768,
+      "load_factor": 0.506591796875,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 16800,
+      "capacity": 32768,
+      "load_factor": 0.5126953125,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 17000,
+      "capacity": 32768,
+      "load_factor": 0.518798828125,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 17200,
+      "capacity": 32768,
+      "load_factor": 0.52490234375,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 17400,
+      "capacity": 32768,
+      "load_factor": 0.531005859375,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 17600,
+      "capacity": 32768,
+      "load_factor": 0.537109375,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 17800,
+      "capacity": 32768,
+      "load_factor": 0.543212890625,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 18000,
+      "capacity": 32768,
+      "load_factor": 0.54931640625,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 18200,
+      "capacity": 32768,
+      "load_factor": 0.555419921875,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 18400,
+      "capacity": 32768,
+      "load_factor": 0.5615234375,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 18600,
+      "capacity": 32768,
+      "load_factor": 0.567626953125,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 18800,
+      "capacity": 32768,
+      "load_factor": 0.57373046875,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 19000,
+      "capacity": 32768,
+      "load_factor": 0.579833984375,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 19200,
+      "capacity": 32768,
+      "load_factor": 0.5859375,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 19400,
+      "capacity": 32768,
+      "load_factor": 0.592041015625,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 19600,
+      "capacity": 32768,
+      "load_factor": 0.59814453125,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 19800,
+      "capacity": 32768,
+      "load_factor": 0.604248046875,
+      "n_resizes": 11
+    },
+    {
+      "n_items": 20000,
+      "capacity": 32768,
+      "load_factor": 0.6103515625,
+      "n_resizes": 11
+    }
+  ]
+}

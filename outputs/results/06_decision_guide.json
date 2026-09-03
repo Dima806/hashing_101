@@ -1,0 +1,57 @@
+{
+  "_meta": {
+    "name": "06_decision_guide",
+    "seed": 20260903
+  },
+  "decision_guide": [
+    {
+      "question": "Is this item in my set? (and it fits in memory)",
+      "structure": "set / dict",
+      "memory": "O(n), ~100 bytes per item",
+      "error": "none",
+      "gives up": "nothing, until it does not fit"
+    },
+    {
+      "question": "Have I seen this item before, at scale?",
+      "structure": "Bloom filter",
+      "memory": "~9.6 bits per item at 1%",
+      "error": "false positives only, tunable",
+      "gives up": "certainty on 'yes'; never on 'no'"
+    },
+    {
+      "question": "Have I seen it, and can I forget items?",
+      "structure": "Counting Bloom filter",
+      "memory": "8x a Bloom filter",
+      "error": "false positives only",
+      "gives up": "memory, in exchange for deletion"
+    },
+    {
+      "question": "How many distinct items are there?",
+      "structure": "HyperLogLog",
+      "memory": "1.5 KB at 2.3% error",
+      "error": "~1.04/sqrt(m) relative",
+      "gives up": "the items themselves; only the count survives"
+    },
+    {
+      "question": "How often did each item appear?",
+      "structure": "Count-Min Sketch",
+      "memory": "d x w counters, fixed",
+      "error": "overestimates by <= eps*N",
+      "gives up": "accuracy on rare items; heavy hitters stay reliable"
+    },
+    {
+      "question": "Which documents are near-duplicates?",
+      "structure": "MinHash + LSH",
+      "memory": "128 numbers per document",
+      "error": "misses some pairs near the threshold",
+      "gives up": "exhaustive comparison, and the quadratic cost with it"
+    },
+    {
+      "question": "How do I encode a million categories?",
+      "structure": "Feature hashing",
+      "memory": "n_buckets per row, fixed",
+      "error": "collisions blur categories",
+      "gives up": "interpretability of a single column"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "_meta": {
+    "name": "01_hash_basics",
+    "seed": 20260903
+  },
+  "examples": [
+    {
+      "value": "'user-000042'",
+      "utf-8 / raw bytes": "757365722d3030303034",
+      "hash64 (hex)": "0xbe556c9b8045d643",
+      "slot in a 16-slot table": 3
+    },
+    {
+      "value": "'user-000043'",
+      "utf-8 / raw bytes": "757365722d3030303034",
+      "hash64 (hex)": "0xd9c2d6e0ee1dfd30",
+      "slot in a 16-slot table": 0
+    },
+    {
+      "value": "'the quick brown fox'",
+      "utf-8 / raw bytes": "74686520717569636b20",
+      "hash64 (hex)": "0xb7fe5df3d385e9be",
+      "slot in a 16-slot table": 14
+    },
+    {
+      "value": "42",
+      "utf-8 / raw bytes": "2a00000000000000",
+      "hash64 (hex)": "0xcc7e997b82494dc5",
+      "slot in a 16-slot table": 5
+    },
+    {
+      "value": "b'raw bytes'",
+      "utf-8 / raw bytes": "726177206279746573",
+      "hash64 (hex)": "0x1b2ba2e7b27a7365",
+      "slot in a 16-slot table": 5
+    }
+  ],
+  "deterministic_across_calls": true,
+  "identical_under_a_different_seed": false,
+  "adjacent_ids_slots": {
+    "user-000042": 579,
+    "user-000043": 304
+  },
+  "mmh3_available": true,
+  "seed": 20260903
+}

@@ -1,0 +1,13 @@
+{
+  "_meta": {
+    "name": "03_takeaways",
+    "seed": 20260903
+  },
+  "takeaways": [
+    "A Bloom filter is a bit array plus k hashes, storing no keys at all.",
+    "Its error is one-sided: tunable false positives, and never a false negative.",
+    "Sizing is closed-form: ~9.6 bits per item at 1%, independent of the item count.",
+    "Overfilling raises the false-positive rate; it never creates a false negative.",
+    "A billion items at 1% is ~1.2 GB against ~160 GB exact - one machine instead of a cluster."
+  ]
+}

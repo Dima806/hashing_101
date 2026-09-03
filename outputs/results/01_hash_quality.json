@@ -1,0 +1,28 @@
+{
+  "_meta": {
+    "name": "01_hash_quality",
+    "seed": 20260903
+  },
+  "report": [
+    {
+      "hash": "hash64",
+      "chi_square": 258.1248,
+      "p_value": 0.43356569392244276,
+      "max_over_expected": 1.3696,
+      "is_uniform": true,
+      "avalanche_mean": 0.49977294921875004,
+      "avalanche_worst_deviation": 0.08600000000000002,
+      "avalanches": true
+    },
+    {
+      "hash": "clumping_hash",
+      "chi_square": 225718.78399999999,
+      "p_value": 0.0,
+      "max_over_expected": 17.024,
+      "is_uniform": false,
+      "avalanche_mean": 0.0309375,
+      "avalanche_worst_deviation": 0.5,
+      "avalanches": false
+    }
+  ]
+}

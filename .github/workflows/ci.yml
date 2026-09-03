@@ -1,0 +1,65 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          cache-dependency-glob: uv.lock
+
+      - name: Set up Python
+        run: uv python install 3.11
+
+      - name: Sync dependencies
+        run: uv sync --all-extras --frozen
+
+      - name: Lint (ruff format, ruff check, ty)
+        run: |
+          uv run ruff format --check src tests app
+          uv run ruff check src tests app
+          uv run ty check src/
+
+      - name: Test
+        run: uv run pytest
+
+  notebooks:
+    runs-on: ubuntu-latest
+    # Notebooks are slower than the unit suite and only need to pass before a release,
+    # so they run on demand and on main rather than on every pull request.
+    if: github.event_name != 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          cache-dependency-glob: uv.lock
+
+      - name: Sync dependencies
+        run: uv sync --all-extras --frozen
+
+      - name: Execute notebooks
+        run: |
+          shopt -s nullglob
+          notebooks=(notebooks/0*.ipynb)
+          if [ ${#notebooks[@]} -eq 0 ]; then
+            echo "No notebooks yet - skipping."
+            exit 0
+          fi
+          make notebooks

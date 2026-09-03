@@ -1,0 +1,66 @@
+{
+  "_meta": {
+    "name": "03_memory_vs_error",
+    "seed": 20260903
+  },
+  "curve": [
+    {
+      "target_fp_rate": 0.1,
+      "n_bits": 479253,
+      "n_hashes": 3,
+      "bits_per_item": 4.79253,
+      "memory_bytes": 59907,
+      "fill_ratio": 0.46461472332984877,
+      "theoretical_fp_rate": 0.10071321535202782,
+      "measured_fp_rate": 0.10046,
+      "false_negatives": 0
+    },
+    {
+      "target_fp_rate": 0.05,
+      "n_bits": 623523,
+      "n_hashes": 4,
+      "bits_per_item": 6.23523,
+      "memory_bytes": 77941,
+      "fill_ratio": 0.47399374201112066,
+      "theoretical_fp_rate": 0.05026935043090881,
+      "measured_fp_rate": 0.05073,
+      "false_negatives": 0
+    },
+    {
+      "target_fp_rate": 0.01,
+      "n_bits": 958506,
+      "n_hashes": 7,
+      "bits_per_item": 9.58506,
+      "memory_bytes": 119814,
+      "fill_ratio": 0.5179946708732132,
+      "theoretical_fp_rate": 0.010039209581758123,
+      "measured_fp_rate": 0.01011,
+      "false_negatives": 0
+    },
+    {
+      "target_fp_rate": 0.001,
+      "n_bits": 1437759,
+      "n_hashes": 10,
+      "bits_per_item": 14.37759,
+      "memory_bytes": 179720,
+      "fill_ratio": 0.5007341285987429,
+      "theoretical_fp_rate": 0.001000023754997981,
+      "measured_fp_rate": 0.00097,
+      "false_negatives": 0
+    },
+    {
+      "target_fp_rate": 0.0001,
+      "n_bits": 1917012,
+      "n_hashes": 13,
+      "bits_per_item": 19.17012,
+      "memory_bytes": 239627,
+      "fill_ratio": 0.4927715632453005,
+      "theoretical_fp_rate": 0.00010013445167882134,
+      "measured_fp_rate": 0.00013,
+      "false_negatives": 0
+    }
+  ],
+  "n_queries": 100000,
+  "false_negatives_total": 0,
+  "note": "Measured false-positive rates sit on the theoretical curve, and the false-negative column is zero in every row - the guarantee, not an average."
+}

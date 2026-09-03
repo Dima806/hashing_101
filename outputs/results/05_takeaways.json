@@ -1,0 +1,13 @@
+{
+  "_meta": {
+    "name": "05_takeaways",
+    "seed": 20260903
+  },
+  "takeaways": [
+    "Shingling turns a document into a set; Jaccard similarity measures 'almost the same'.",
+    "MinHash: P(signatures agree) = Jaccard, so a fixed 128-number signature estimates similarity.",
+    "LSH bands signatures so similar ones collide - all-pairs search becomes a dictionary lookup.",
+    "The S-curve knee (1/b)^(1/r) is the threshold; recall near it is predictable, not mysterious.",
+    "Verify the shortlist exactly: LSH removes the quadratic term, not the need for a final check."
+  ]
+}

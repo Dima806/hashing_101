@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "name": "02_chaining",
+    "seed": 20260903
+  },
+  "capacity": 4096,
+  "n_items": 3072,
+  "load_factor": 0.75,
+  "empty_slots": 1912,
+  "longest_chain": 5,
+  "chain_length_histogram": {
+    "0": 1912,
+    "1": 1480,
+    "2": 559,
+    "3": 110,
+    "4": 31,
+    "5": 4
+  },
+  "memory_bytes": 504472
+}

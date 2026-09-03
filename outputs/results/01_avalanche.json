@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "name": "01_avalanche",
+    "seed": 20260903
+  },
+  "n_samples": 1000,
+  "hash64": {
+    "mean_flip_rate": 0.499738525390625,
+    "worst_deviation": 0.07099999999999995,
+    "avalanches": true
+  },
+  "clumping_hash": {
+    "mean_flip_rate": 0.03115771484375,
+    "worst_deviation": 0.5,
+    "avalanches": false
+  },
+  "tolerance_note": "The pass/fail band is 5 standard errors of the measurement itself, sqrt(0.25 / n_samples), not a tuned threshold."
+}

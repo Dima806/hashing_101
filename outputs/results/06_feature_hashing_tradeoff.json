@@ -1,0 +1,128 @@
+{
+  "_meta": {
+    "name": "06_feature_hashing_tradeoff",
+    "seed": 20260903
+  },
+  "collision_curve": [
+    {
+      "n_buckets": 16,
+      "n_tokens": 5000,
+      "measured_collision_rate": 0.9968,
+      "expected_collision_rate": 0.9968,
+      "bytes_per_row": 128
+    },
+    {
+      "n_buckets": 32,
+      "n_tokens": 5000,
+      "measured_collision_rate": 0.9936,
+      "expected_collision_rate": 0.9936,
+      "bytes_per_row": 256
+    },
+    {
+      "n_buckets": 64,
+      "n_tokens": 5000,
+      "measured_collision_rate": 0.9872,
+      "expected_collision_rate": 0.9872,
+      "bytes_per_row": 512
+    },
+    {
+      "n_buckets": 128,
+      "n_tokens": 5000,
+      "measured_collision_rate": 0.9744,
+      "expected_collision_rate": 0.9744,
+      "bytes_per_row": 1024
+    },
+    {
+      "n_buckets": 256,
+      "n_tokens": 5000,
+      "measured_collision_rate": 0.9488,
+      "expected_collision_rate": 0.9488000001623101,
+      "bytes_per_row": 2048
+    },
+    {
+      "n_buckets": 512,
+      "n_tokens": 5000,
+      "measured_collision_rate": 0.8976,
+      "expected_collision_rate": 0.8976058209752276,
+      "bytes_per_row": 4096
+    },
+    {
+      "n_buckets": 1024,
+      "n_tokens": 5000,
+      "measured_collision_rate": 0.7968,
+      "expected_collision_rate": 0.7967478016811873,
+      "bytes_per_row": 8192
+    },
+    {
+      "n_buckets": 4096,
+      "n_tokens": 5000,
+      "measured_collision_rate": 0.4226,
+      "expected_collision_rate": 0.4224465432515785,
+      "bytes_per_row": 32768
+    }
+  ],
+  "model_curve": [
+    {
+      "n_buckets": 16,
+      "alternate_sign": true,
+      "test_r2": 0.41759369128058055,
+      "collision_rate": 0.9949125596184419,
+      "memory_bytes": 640000
+    },
+    {
+      "n_buckets": 32,
+      "alternate_sign": true,
+      "test_r2": 0.4676576054853775,
+      "collision_rate": 0.989825119236884,
+      "memory_bytes": 1280000
+    },
+    {
+      "n_buckets": 64,
+      "alternate_sign": true,
+      "test_r2": 0.47987731464553807,
+      "collision_rate": 0.9796502384737679,
+      "memory_bytes": 2560000
+    },
+    {
+      "n_buckets": 128,
+      "alternate_sign": true,
+      "test_r2": 0.5543089817621519,
+      "collision_rate": 0.9593004769475357,
+      "memory_bytes": 5120000
+    },
+    {
+      "n_buckets": 256,
+      "alternate_sign": true,
+      "test_r2": 0.5814244643795414,
+      "collision_rate": 0.9186009538950716,
+      "memory_bytes": 10240000
+    },
+    {
+      "n_buckets": 512,
+      "alternate_sign": true,
+      "test_r2": 0.581088539248271,
+      "collision_rate": 0.8372019077901431,
+      "memory_bytes": 20480000
+    },
+    {
+      "n_buckets": 1024,
+      "alternate_sign": true,
+      "test_r2": 0.5924276167561077,
+      "collision_rate": 0.6887122416534182,
+      "memory_bytes": 40960000
+    },
+    {
+      "n_buckets": 4096,
+      "alternate_sign": true,
+      "test_r2": 0.5792649676624031,
+      "collision_rate": 0.29984101748807634,
+      "memory_bytes": 163840000
+    }
+  ],
+  "peak_test_r2": 0.5924276167561077,
+  "knee_bucket_count": 256,
+  "knee_test_r2": 0.5814244643795414,
+  "knee_collision_rate": 0.9186009538950716,
+  "n_categories": 4914,
+  "note": "Measured collision rates match the balls-in-bins prediction, so the bucket count can be chosen from the formula for any cardinality without running an experiment. The argmax of the R^2 curve is noise on a plateau; the knee is the real choice."
+}

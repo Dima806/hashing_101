@@ -1,0 +1,187 @@
+{
+  "_meta": {
+    "name": "04_hyperloglog_error",
+    "seed": 20260903
+  },
+  "error_curve": [
+    {
+      "precision": 8,
+      "n_registers": 256,
+      "memory_bytes": 256,
+      "packed_memory_bytes": 192,
+      "true_cardinality": 1000,
+      "estimate": 1001.1258514133139,
+      "relative_error": 0.0011258514133138534,
+      "standard_error": 0.065,
+      "within_2_sigma": true
+    },
+    {
+      "precision": 10,
+      "n_registers": 1024,
+      "memory_bytes": 1024,
+      "packed_memory_bytes": 768,
+      "true_cardinality": 1000,
+      "estimate": 1015.0917661481182,
+      "relative_error": 0.015091766148118154,
+      "standard_error": 0.0325,
+      "within_2_sigma": true
+    },
+    {
+      "precision": 12,
+      "n_registers": 4096,
+      "memory_bytes": 4096,
+      "packed_memory_bytes": 3072,
+      "true_cardinality": 1000,
+      "estimate": 1006.0220765433605,
+      "relative_error": 0.006022076543360526,
+      "standard_error": 0.01625,
+      "within_2_sigma": true
+    },
+    {
+      "precision": 14,
+      "n_registers": 16384,
+      "memory_bytes": 16384,
+      "packed_memory_bytes": 12288,
+      "true_cardinality": 1000,
+      "estimate": 1004.1524146187933,
+      "relative_error": 0.004152414618793273,
+      "standard_error": 0.008125,
+      "within_2_sigma": true
+    },
+    {
+      "precision": 8,
+      "n_registers": 256,
+      "memory_bytes": 256,
+      "packed_memory_bytes": 192,
+      "true_cardinality": 10000,
+      "estimate": 9470.321711803253,
+      "relative_error": -0.05296782881967465,
+      "standard_error": 0.065,
+      "within_2_sigma": true
+    },
+    {
+      "precision": 10,
+      "n_registers": 1024,
+      "memory_bytes": 1024,
+      "packed_memory_bytes": 768,
+      "true_cardinality": 10000,
+      "estimate": 9691.368564098644,
+      "relative_error": -0.03086314359013559,
+      "standard_error": 0.0325,
+      "within_2_sigma": true
+    },
+    {
+      "precision": 12,
+      "n_registers": 4096,
+      "memory_bytes": 4096,
+      "packed_memory_bytes": 3072,
+      "true_cardinality": 10000,
+      "estimate": 9892.384085270436,
+      "relative_error": -0.010761591472956389,
+      "standard_error": 0.01625,
+      "within_2_sigma": true
+    },
+    {
+      "precision": 14,
+      "n_registers": 16384,
+      "memory_bytes": 16384,
+      "packed_memory_bytes": 12288,
+      "true_cardinality": 10000,
+      "estimate": 10050.02750048717,
+      "relative_error": 0.005002750048716916,
+      "standard_error": 0.008125,
+      "within_2_sigma": true
+    },
+    {
+      "precision": 8,
+      "n_registers": 256,
+      "memory_bytes": 256,
+      "packed_memory_bytes": 192,
+      "true_cardinality": 100000,
+      "estimate": 118583.6475833528,
+      "relative_error": 0.18583647583352794,
+      "standard_error": 0.065,
+      "within_2_sigma": false
+    },
+    {
+      "precision": 10,
+      "n_registers": 1024,
+      "memory_bytes": 1024,
+      "packed_memory_bytes": 768,
+      "true_cardinality": 100000,
+      "estimate": 106527.24957860973,
+      "relative_error": 0.06527249578609728,
+      "standard_error": 0.0325,
+      "within_2_sigma": false
+    },
+    {
+      "precision": 12,
+      "n_registers": 4096,
+      "memory_bytes": 4096,
+      "packed_memory_bytes": 3072,
+      "true_cardinality": 100000,
+      "estimate": 101284.49771715603,
+      "relative_error": 0.012844977171560313,
+      "standard_error": 0.01625,
+      "within_2_sigma": true
+    },
+    {
+      "precision": 14,
+      "n_registers": 16384,
+      "memory_bytes": 16384,
+      "packed_memory_bytes": 12288,
+      "true_cardinality": 100000,
+      "estimate": 100660.42554037951,
+      "relative_error": 0.006604255403795105,
+      "standard_error": 0.008125,
+      "within_2_sigma": true
+    },
+    {
+      "precision": 8,
+      "n_registers": 256,
+      "memory_bytes": 256,
+      "packed_memory_bytes": 192,
+      "true_cardinality": 1000000,
+      "estimate": 991424.6757271045,
+      "relative_error": -0.008575324272895465,
+      "standard_error": 0.065,
+      "within_2_sigma": true
+    },
+    {
+      "precision": 10,
+      "n_registers": 1024,
+      "memory_bytes": 1024,
+      "packed_memory_bytes": 768,
+      "true_cardinality": 1000000,
+      "estimate": 957431.3926986324,
+      "relative_error": -0.042568607301367564,
+      "standard_error": 0.0325,
+      "within_2_sigma": true
+    },
+    {
+      "precision": 12,
+      "n_registers": 4096,
+      "memory_bytes": 4096,
+      "packed_memory_bytes": 3072,
+      "true_cardinality": 1000000,
+      "estimate": 972289.7186252114,
+      "relative_error": -0.02771028137478861,
+      "standard_error": 0.01625,
+      "within_2_sigma": true
+    },
+    {
+      "precision": 14,
+      "n_registers": 16384,
+      "memory_bytes": 16384,
+      "packed_memory_bytes": 12288,
+      "true_cardinality": 1000000,
+      "estimate": 987130.54796137,
+      "relative_error": -0.012869452038630028,
+      "standard_error": 0.008125,
+      "within_2_sigma": true
+    }
+  ],
+  "within_2_sigma_fraction": 0.875,
+  "worst_relative_error": 0.18583647583352794,
+  "note": "Memory per precision is constant down each column: the sketch does not grow with the cardinality it is counting."
+}

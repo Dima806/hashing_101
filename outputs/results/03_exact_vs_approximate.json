@@ -1,0 +1,24 @@
+{
+  "_meta": {
+    "name": "03_exact_vs_approximate",
+    "seed": 20260903
+  },
+  "comparison": [
+    {
+      "structure": "exact set",
+      "memory_bytes": 9694520,
+      "build_seconds": 0.009962378999262,
+      "query_seconds": 0.0030387610004254384,
+      "false_positive_rate": 0.0,
+      "false_negatives": 0
+    },
+    {
+      "structure": "bloom filter (p=0.01)",
+      "memory_bytes": 119814,
+      "build_seconds": 0.08677177100071276,
+      "query_seconds": 0.038122990999909234,
+      "false_positive_rate": 0.00968,
+      "false_negatives": 0
+    }
+  ]
+}

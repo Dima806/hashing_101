@@ -1,0 +1,13 @@
+{
+  "_meta": {
+    "name": "04_takeaways",
+    "seed": 20260903
+  },
+  "takeaways": [
+    "HyperLogLog counts uniques from the longest run of leading zeros, averaged over m registers.",
+    "Its error is 1.04/sqrt(m) and independent of the true cardinality: ~2.3% in 1,536 bytes.",
+    "Duplicates cost nothing and sketches merge losslessly by register-wise maximum.",
+    "Count-Min estimates frequencies and never underestimates; it overshoots by at most eps*N.",
+    "Both structures discard the items themselves - that is what buys the memory."
+  ]
+}

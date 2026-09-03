@@ -1,0 +1,83 @@
+{
+  "_meta": {
+    "name": "05_lsh_recall",
+    "seed": 20260903
+  },
+  "s_curve": [
+    {
+      "num_bands": 8,
+      "rows_per_band": 16,
+      "threshold": 0.8781260801866497,
+      "P(candidate | s=0.4)": 3.435968671916534e-06,
+      "P(candidate | s=0.7)": 0.026279151579851945,
+      "P(candidate | s=0.9)": 0.8059234243440475
+    },
+    {
+      "num_bands": 16,
+      "rows_per_band": 8,
+      "threshold": 0.7071067811865476,
+      "P(candidate | s=0.4)": 0.010434377683231522,
+      "P(candidate | s=0.7)": 0.6132677123375208,
+      "P(candidate | s=0.9)": 0.9998774538341496
+    },
+    {
+      "num_bands": 32,
+      "rows_per_band": 4,
+      "threshold": 0.42044820762685725,
+      "P(candidate | s=0.4)": 0.5638932494314449,
+      "P(candidate | s=0.7)": 0.9998471708406208,
+      "P(candidate | s=0.9)": 0.9999999999999986
+    },
+    {
+      "num_bands": 64,
+      "rows_per_band": 2,
+      "threshold": 0.125,
+      "P(candidate | s=0.4)": 0.9999857480494122,
+      "P(candidate | s=0.7)": 1.0,
+      "P(candidate | s=0.9)": 1.0
+    }
+  ],
+  "chosen_banding": {
+    "num_bands": 32,
+    "rows_per_band": 4
+  },
+  "recall_report": [
+    {
+      "num_bands": 16,
+      "rows_per_band": 8,
+      "num_perm": 128,
+      "threshold": 0.7071067811865476,
+      "true_pairs": 40,
+      "candidate_pairs": 24,
+      "all_pairs": 79800,
+      "work_ratio": 0.0003007518796992481,
+      "recall": 0.6,
+      "precision": 1.0
+    },
+    {
+      "num_bands": 32,
+      "rows_per_band": 4,
+      "num_perm": 128,
+      "threshold": 0.42044820762685725,
+      "true_pairs": 40,
+      "candidate_pairs": 40,
+      "all_pairs": 79800,
+      "work_ratio": 0.0005012531328320802,
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    {
+      "num_bands": 64,
+      "rows_per_band": 2,
+      "num_perm": 128,
+      "threshold": 0.125,
+      "true_pairs": 40,
+      "candidate_pairs": 40,
+      "all_pairs": 79800,
+      "work_ratio": 0.0005012531328320802,
+      "recall": 1.0,
+      "precision": 1.0
+    }
+  ],
+  "note": "Measured recall tracks the S-curve prediction: a banding whose knee sits below the similarity of the planted pairs finds essentially all of them."
+}

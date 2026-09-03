@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "name": "05_minhash_accuracy",
+    "seed": 20260903
+  },
+  "num_perm": 128,
+  "signature_bytes": 1024,
+  "shingle_size": 5,
+  "accuracy": [
+    {
+      "true_jaccard": 0.20048019207683074,
+      "estimated_jaccard": 0.1796875,
+      "abs_error": 0.020792692076830738,
+      "expected_std": 0.035387131826686374,
+      "within_3_sigma": true,
+      "signature_bytes": 1024
+    },
+    {
+      "true_jaccard": 0.4005602240896359,
+      "estimated_jaccard": 0.421875,
+      "abs_error": 0.021314775910364125,
+      "expected_std": 0.04331134837636528,
+      "within_3_sigma": true,
+      "signature_bytes": 1024
+    },
+    {
+      "true_jaccard": 0.6,
+      "estimated_jaccard": 0.59375,
+      "abs_error": 0.006249999999999978,
+      "expected_std": 0.04330127018922193,
+      "within_3_sigma": true,
+      "signature_bytes": 1024
+    },
+    {
+      "true_jaccard": 0.7985611510791367,
+      "estimated_jaccard": 0.7578125,
+      "abs_error": 0.04074865107913672,
+      "expected_std": 0.03545036572738673,
+      "within_3_sigma": true,
+      "signature_bytes": 1024
+    },
+    {
+      "true_jaccard": 0.949317738791423,
+      "estimated_jaccard": 0.953125,
+      "abs_error": 0.0038072612085769952,
+      "expected_std": 0.019387812216893376,
+      "within_3_sigma": true,
+      "signature_bytes": 1024
+    }
+  ],
+  "example_pair": {
+    "document_a": "encoder0 signal4 signal10 model2 shard0 bit4 shard6 bucket10 cache9 memory5 rate3 batch2 vector1 signal10 vector6 encoder3 bloom7 encoder7 token5 window4 lookup0 unique4 cache7 noise4 token6 bound7 seed1 bound8 token0 array6 cache9 sketch1 estimate3 memory3 cardinality3 stream7 noise8 signal1 error10 array1 model8 target6 dictionary1 token4 noise5 batch6 hash5 sketch1 bound7 collision5 sketch6 feature0 cardinality0 probe0 vector2 cardinality2 array1 collision4 unique2 stream10",
+    "document_b": "encoder0 signal4 signal10 model2 shard0 bit4 shard6 bucket10 cache9 memory5 rate3 batch2 vector1 signal10 vector6 encoder3 bloom7 encoder7 token5 window4 lookup0 unique4 cache7 noise4 token6 bound7 seed1 bound8 token0 array6 cache9 sketch1 estimate3 rate3 cardinality3 stream7 noise8 signal1 error10 array1 model8 target6 dictionary1 token4 noise5 batch6 shard0 sketch1 bound7 collision5 sketch6 feature0 cardinality0 probe0 vector2 cardinality2 array1 collision4 unique2 stream10",
+    "true_jaccard": 0.696969696969697,
+    "estimated_jaccard": 0.7109375
+  },
+  "all_within_3_sigma": true
+}

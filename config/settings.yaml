@@ -1,0 +1,75 @@
+# Every tunable in the project lives here: bucket counts, hash counts, error targets, seeds.
+# Change scale in one place; nothing in src/, tests/ or the notebooks hard-codes these numbers.
+
+seed: 20260903
+
+stream:
+  n_items: 200000
+  n_unique: 20000
+  distribution: zipf # zipf | uniform
+  zipf_exponent: 1.2
+
+hashtable:
+  initial_capacity: 16
+  max_load_factor: 0.75
+  demo_items: 20000
+
+bloom:
+  expected_items: 100000
+  target_fp_rate: 0.01
+  fp_targets: [0.1, 0.05, 0.01, 0.001, 0.0001]
+  # The "billion items" claim is projected analytically at these scales, never allocated.
+  projection_scales: [1000000, 10000000, 100000000, 1000000000]
+
+counting_bloom:
+  expected_items: 50000
+  target_fp_rate: 0.01
+  counter_bits: 8
+
+hyperloglog:
+  precision: 11 # m = 2048 registers, 1.5 KB packed, standard error 2.3%
+  precisions: [8, 10, 12, 14]
+  cardinalities: [1000, 10000, 100000, 1000000]
+
+count_min:
+  epsilon: 0.001
+  delta: 0.01
+  top_k: 10
+
+minhash:
+  num_perm: 128 # must equal lsh.num_bands * lsh.rows_per_band
+  shingle_size: 5
+  similarities: [0.2, 0.4, 0.6, 0.8, 0.95]
+
+lsh:
+  # 32 bands of 4 rows puts the S-curve knee near J=0.42, so documents that share
+  # roughly half their shingles are found; 16x8 would only catch near-identical ones.
+  num_bands: 32
+  rows_per_band: 4
+  target_threshold: 0.5
+
+feature_hashing:
+  n_buckets: 256
+  bucket_counts: [16, 32, 64, 128, 256, 512, 1024, 4096]
+  alternate_sign: true
+
+corpus:
+  n_docs: 400
+  n_near_duplicates: 40
+  doc_words: 60
+  edit_fraction: 0.04
+  vocabulary_size: 400
+
+categorical:
+  n_rows: 20000
+  n_categories: 5000
+  n_informative: 200
+  noise: 0.3
+
+figures:
+  dpi: 120
+  directory: outputs/figures
+
+# Every number and sentence a notebook produces is written here as JSON.
+results:
+  directory: outputs/results
