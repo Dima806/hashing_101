@@ -1,9 +1,9 @@
 """Persist every number and every sentence a notebook produces, as JSON.
 
 Notebooks are for reading; ``outputs/results/*.json`` is for reusing. Every table, measurement and
-takeaway a notebook computes is written here, so the article, the README and any later analysis
-quote the same numbers the code actually produced - and a reviewer can diff them after a rerun
-without opening a notebook.
+takeaway a notebook computes is written here, so the README and any later analysis quote the same
+numbers the code actually produced - and a reviewer can diff them after a rerun without opening a
+notebook.
 
 Output carries no timestamps, so a rerun of the same seed rewrites the same values - with one
 honest exception: files that record wall-clock timings (``*_exact_vs_approximate``,
